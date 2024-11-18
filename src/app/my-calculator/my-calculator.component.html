@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <form action="" [formGroup]="inputString">
+                    <input type="text" formControlName="text">
+                </form>
+            </div>
+            <div class="buttons">
+
+                <button (click)="buttonClear()" class="btn ">AC</button>
+                <button (click)="buttonToggleSign()" class="btn">+/-</button>
+                <button (click)="buttonPercent()" class="btn">%</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-orange">÷</button>
+
+                <button (click)="buttonClick($event.target)" class="btn btn-black">7</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">8</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">9</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-orange">x</button>
+
+                <button (click)="buttonClick($event.target)" class="btn btn-black">4</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">5</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">6</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-orange">-</button>
+
+
+                <button (click)="buttonClick($event.target)" class="btn btn-black">1</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">2</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">3</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-orange">+</button>
+
+
+                <button (click)="buttonClick($event.target)" class="btn btn-black zero">0</button>
+                <button (click)="buttonClick($event.target)" class="btn btn-black">.</button>
+                <button (click)="buttonCalculate()" class="btn btn-orange">=</button>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
